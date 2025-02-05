@@ -1,42 +1,36 @@
-body, html {
+*{
   margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
 }
-.parallax {
-  position: relative;
-  height: 100vh;
+
+.plx1 {
+  background-image: url('https://images3.alphacoders.com/132/1328396.png');
+}
+.plx2 {
+  background-image: url("https://images3.alphacoders.com/114/1144293.jpg");
+}
+.plx{
+  height: 800px;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+}
+
+.text-white{
   color: white;
-  font-size: 2em;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
-.parallax1 {
-  background-image: url('https://wallpapercat.com/w/full/7/0/6/26427-3840x2160-desktop-4k-black-hole-wallpaper-image.jpg');
-}
-.parallax2 {
-  background-image: url('https://images6.alphacoders.com/128/1289303.png');
-}
-.content {
-  padding: 50px;
-  background-color: #111;
+
+section{
+  background-color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  text-align: center;
-  font-size: 1.5em;
-}
-.black-box {
-  background-color: black;
-  padding: 20px;
-  border-radius: 10px;
-}
-.message {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
+  font-size:80px;
+  font-family:'Courier New', Courier, monospace;
 }
