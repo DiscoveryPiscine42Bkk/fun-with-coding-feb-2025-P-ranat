@@ -1,43 +1,50 @@
-/* Style สำหรับปุ่ม dropdown */
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* ปุ่มที่ใช้เปิด dropdown */
-  .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* ส่วนของ dropdown-content */
-  .dropdown-content {
-    display: none; /* ซ่อนเมนูตอนแรก */
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  /* เมื่อ hover บน dropdown */
-  .dropdown:hover .dropdown-content {
-    display: block; /* แสดงเมนูเมื่อ hover */
-  }
-  
-  /* การจัดสไตล์ให้กับลิงก์ในเมนู */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* เมื่อ hover บนลิงก์ */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
+.container{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.dropbtn{
+  border: solid 2px rgb(94, 55, 4);
+  border-radius: 20px;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blanchedalmond;
+  cursor: pointer;
+}
+
+.dropbtn:hover{
+  background: rgb(252, 213, 156);
+}
+
+.indropdown{
+  display: none;
+  border: 2px solid black;
+  border-radius: 20px;
+  width: 200px;
+  padding-left: 10px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropbtn:hover + .indropdown{
+  display: block;
+}
+
+.indropdown:hover{
+  display: block;
+}
+
+li{
+  cursor: pointer;
+  border: black  2px;
+  margin: 10px;
+}
+
+li:hover{
+  background-color: rgb(184, 247, 184);
+}
+
+
