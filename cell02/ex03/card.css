@@ -1,43 +1,68 @@
-body {
-  font-family: Arial, sans-serif;
+body{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f4f4f4;
+  flex-direction: column;
 }
-.profile-card {
-  text-align: center;
-}
-.card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.card{
+  border: solid rgb(167, 167, 167) 2px;
+  border-radius: 20px;
   width: 300px;
+  height: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-.profile-pic {
-  width: 100%;
-  border-radius: 10px;
+
+.Profile{
+  width: 230px;
+  height: 230px;
+  border-radius: 20px;
+  margin-top: 25px;
 }
-.username {
-  font-size: 24px;
-  margin: 10px 0;
+
+.name{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.description, .location {
-  font-size: 14px;
-  color: #777;
+
+.dis{
+  color: gray;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
 }
-.social-icons i{
-  width: 24px;
+
+.dis2{
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+  margin-top: 10px;
 }
-.contact-btn {
-  background: rgb(240, 132, 213);
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  border-radius: 5px;
+
+.icon{
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  margin-top: 10px;
   cursor: pointer;
-  margin: 10px;
+}
+
+.btn{
+  margin-top: 10px;
+ background-color: rgb(250, 199, 61);
+ width: 230px;
+ height: 40px;
+ border-radius: 15px;
+ border: solid 2px rgb(122, 103, 15);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-weight: 600;
+ font-size: 24px;
+ cursor: pointer;
+}
+
+.btn:hover{
+  background-color: rgb(190, 152, 46);
 }
