@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .balloon {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 100%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="balloon"></div>
+    <script>
+        $(document).ready(function () {
+            const $balloon = $(".balloon");
+            let size = 200;
+            const colors = ["red", "green", "blue"];
+            let colorIndex = 0;
+
+
+            $balloon.on("click", function () {
+
+                if (size <= 420) {
+                    size += 10;
+                    colorIndex = (colorIndex + 1) % colors.length;
+                    $balloon.css({
+                        width: size + "px",
+                        height: size + "px",
+                        backgroundColor: colors[colorIndex]
+                    });
+                    
+                } else {
+                    size = 200;
+                    $balloon.css({
+                        width: size + "px",
+                        height: size + "px",
+                        backgroundColor: colors[0]
+                    });
+                    colorIndex = 0;
+                }
+            });
+
+            $balloon.on("mouseleave", function () {
+                if (size > 200) {
+                    size -= 10;
+                    colorIndex = (colorIndex - 1 + colors.length) % colors.length;
+                    $balloon.css({
+                        width: size + "px",
+                        height: size + "px",
+                        backgroundColor: colors[colorIndex]
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
