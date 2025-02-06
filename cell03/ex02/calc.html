@@ -3,85 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Document</title>
     <style>
         body{
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
         }
-        .container {
+        .calculator{
+            border: black solid 2px;
+            border-radius: 20px;
+            height: 300px;
+            width: 700px;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 300px;
-            width: 350px;
-            background-color: bisque;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            flex-direction: column;
         }
-        input, select, button {
-            margin: 10px;
-            padding: 10px;
-            font-size: 16px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
+        
+        input{
+            border: 2px solid black;
+            border-radius: 4px;
+            height: 20px;
+            width: 170px;
+            margin: 20px;
         }
+        .tryme{
+            border: black solid 2px;
+            border-radius: 12px;
+            width: 100px;
+            height: 40px;
+            display: grid;
+            place-items: center;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+        .cal{
+            display: flex;
+            align-items: center;
+        }
+        
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <input type="number" id="leftOperand" placeholder="Enter number" min="0">
-        <select id="operator">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="*">*</option>
-            <option value="/">/</option>
-            <option value="%">%</option>
-        </select>
-        <input type="number" id="rightOperand" placeholder="Enter number" min="0">
-        <button onclick="calculate()">Try me!</button>
+    <div class="calculator">
+        <div class="cal">
+            <input  id="left">
+            <select id="option">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+            <input  id="right">
+        </div>
+        <div class="tryme" onclick="calculator()">Try me!</div>   
     </div>
     <script>
-        function calculate() {
-            let left = document.getElementById("leftOperand").value;
-            let right = document.getElementById("rightOperand").value;
-            let operator = document.getElementById("operator").value;
+        let tryme = document.getElementsByClassName("tryme")[0]
 
-            if (left === "" || right === "" || left < 0 || right < 0) {
-                alert("Error :(");
-                return;
+        function calculator() {
+            let inputL = document.getElementById("left").value
+            let inputR = document.getElementById("right").value
+            let option = document.getElementById("option").value
+             inputL = parseFloat(inputL)
+             inputR = parseFloat(inputR)
+             let result
+             if(inputL != NaN && inputR != NaN && inputL >= 0 && inputR >= 0){
+                switch (option){
+                case "+":
+                    result = inputL + inputR
+                    break;
+
+                case "-":
+                    result = inputL - inputR
+                    break;
+
+                case "*":
+                    result = inputL * inputR
+                    break;
+
+                case "/":
+                    if(inputR == 0){
+                        result = "It's over 9000!"
+                        break;
+                    }
+                    else{
+                        result = inputL / inputR
+                        break;
+                    }
+                
+                case "%":
+                    if(inputR == 0){
+                        result = "It's over 9000!"
+                        break; 
+                    }
+                    else{
+                        result = inputL % inputR
+                        break;
+                    }
+             }
             }
-
-            left = parseInt(left);
-            right = parseInt(right);
-            let result;
-
-            if ((operator === "/" || operator === "%") && right === 0) {
-                alert("It’s over 9000!");
-                console.log("It’s over 9000!");
-                return;
+            else{
+                result = "Error :("
             }
-
-            switch (operator) {
-                case "+": result = left + right; break;
-                case "-": result = left - right; break;
-                case "*": result = left * right; break;
-                case "/": result = left / right; break;
-                case "%": result = left % right; break;
-            }
-
-            alert("Result: " + result);
-            console.log("Result: " + result);
+            
+            alert(result)
         }
 
         setInterval(() => {
-            alert("Please, use me...");
+            alert("Please, use me....");
         }, 30000);
+        
     </script>
 </body>
 </html>
