@@ -35,7 +35,7 @@
 
             $balloon.on("click", function () {
 
-                if (size <= 420) {
+                if (size < 420) {
                     size += 10;
                     colorIndex = (colorIndex + 1) % colors.length;
                     $balloon.css({
@@ -43,7 +43,7 @@
                         height: size + "px",
                         backgroundColor: colors[colorIndex]
                     });
-                    
+                    console.log(size)
                 } else {
                     size = 200;
                     $balloon.css({
