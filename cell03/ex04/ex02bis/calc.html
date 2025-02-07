@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .calculator{
+            border: black solid 2px;
+            border-radius: 20px;
+            height: 300px;
+            width: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        input{
+            border: 2px solid black;
+            border-radius: 4px;
+            height: 20px;
+            width: 170px;
+            margin: 20px;
+        }
+        .tryme{
+            border: black solid 2px;
+            border-radius: 12px;
+            width: 100px;
+            height: 40px;
+            display: grid;
+            place-items: center;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+        .cal{
+            display: flex;
+            align-items: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="cal">
+            <input  id="left">
+            <select id="option">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+            <input  id="right">
+        </div>
+        <div class="tryme" onclick="calculator()">Try me!</div>   
+    </div>
+    <script>
+        function isNumeric(value) {
+            return /^-?\d+(\.\d+)?$/.test(value);
+        }
+
+        $(document).ready(function () {
+            $('.tryme').on('click', function () {
+                let inputL = $('#left').val();
+                let inputR = $('#right').val();
+                let option = $('#option').val();
+                let checkinputL = isNumeric(inputL);
+                let checkinputR = isNumeric(inputR);
+                let result;
+
+                if (checkinputL && checkinputR) {
+                    inputL = parseFloat(inputL);
+                    inputR = parseFloat(inputR);
+
+                    if (inputL >= 0 && inputR >= 0) {
+                        switch (option) {
+                            case "+":
+                                result = inputL + inputR;
+                                break;
+                            case "-":
+                                result = inputL - inputR;
+                                break;
+                            case "*":
+                                result = inputL * inputR;
+                                break;
+                            case "/":
+                                if (inputR === 0) {
+                                    result = "It's over 9000!";
+                                } else {
+                                    result = inputL / inputR;
+                                }
+                                break;
+                            case "%":
+                                if (inputR === 0) {
+                                    result = "It's over 9000!";
+                                } else {
+                                    result = inputL % inputR;
+                                }
+                                break;
+                        }
+                    } else {
+                        result = "Error :(";
+                    }
+                } else {
+                    result = "Error :(";
+                }
+
+                alert(result);
+            });
+
+            
+            setInterval(function () {
+                alert("Please, use me....");
+            }, 30000);
+        });
+    </script>
+</body>
+</html>
