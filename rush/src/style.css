@@ -1,0 +1,12 @@
+    .parallax1 {
+      background: url("https://www.pixelstalk.net/wp-content/uploads/images6/The-best-Cartoon-Wallpaper-HD.jpg  ") center center no-repeat;
+      background-attachment: fixed;
+      height: 100vh
+      
+      ;
+    }
+
+    @theme{
+    
+    }
+  

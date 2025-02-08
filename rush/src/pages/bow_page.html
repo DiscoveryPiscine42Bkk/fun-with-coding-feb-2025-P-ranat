@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanichaya</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="bg-purple-50 ">
+        <nav class="bg-pink-600 flex justify-between h-[50px] items-center p-[10px]">
+            <a href="/rush/src/pages/Home.html"
+              class="px-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[0px] hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]">
+              <img src="../assets/home.png" alt="home_icon" class="h-[20px] w-[20px] ">
+              <div class="ml-[5px]">Home</div>
+            </a>
+    
+            <div class="sm:flex hidden">
+              <div id="Touser"
+                class="px-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[0px] hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]">
+                <img src="../assets/user.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                <div class="ml-[5px]">User</div>
+              </div>
+              <div id="Toex"
+                class="px-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[0px] hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]">
+                <img src="../assets/agenda.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                <div class="ml-[5px]">experience</div>
+              </div>
+              <div id="Tocon"
+                class="px-[10px] cursor-pointer flex items-center text-[0px] hover:transition-all duration-350 hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px]">
+                <img src="../assets/telephone.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                <div class="ml-[5px]">Contrat</div>
+              </div>
+            </div>
+            <div id="btndrop"
+                class="px-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[0px] hover:text-[14px] hover:bg-white hover:h-[35px] rounded-[12px] sm:hidden">
+                <img src="../assets/align-justify.svg" alt="home_icon" class="h-[20px] w-[20px] ">
+                <div class="ml-[5px]">Menu</div>
+              </div>
+              
+              <div class='hidden bg-gray-300 w-[150px] h-[190px] border-black border-[2px] absolute right-0 mt-[240px]'id = "dropcon">
+                <div class="flex flex-col justify-between h-[190px] w-[150px]">
+                  <div><img src="../assets/x.svg" alt="X" id="X" class="cursor-pointer"></div>
+                  <div id="Touser1"
+                    class="m-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[14px] hover:bg-white  rounded-[12px]">
+                    <img src="../assets/user.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                    <div class="ml-[5px]">User</div>
+                  </div>
+                  <div id="Toex1"
+                    class="m-[10px] cursor-pointer mr-[20px] flex hover:transition-all duration-350 items-center text-[14px] hover:bg-white  rounded-[12px]">
+                    <img src="../assets/agenda.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                    <div class="ml-[5px]">experience</div>
+                  </div>
+                  <div id="Tocon1"
+                    class="m-[10px] cursor-pointer flex items-center  hover:transition-all duration-350 text-[14px] hover:bg-white rounded-[12px]">
+                    <img src="../assets/telephone.png" alt="home_icon" class="h-[20px] w-[20px] ">
+                    <div class="ml-[5px]">Contrat</div>
+                  </div>
+                </div>
+              </div>
+          </nav>
+        <div class="flex-col flex lg:flex-row  mt-10  h-150 items-center gap-4  text-center  md:text-left lg:p-15 p-4 justify-between mx-[30px]"id="user">
+            <!-- ข้อความ -->
+            <div class=" lg:w-[120vh] w-120  font-bold ">
+                <div class="flex  sm:flex-col flex-row  xl:ml-20 sm:item-start gap-2 whitespace-nowrap px-6 lg:px-0 md:text-center lg:text-left">
+                    <h1 class="lg:text-[80px] xl:text-[15vh]  text-[30px] text-cyan-600 ">Hi I'm Bow</h1>
+
+                    <p class="lg:text-[50px] xl:text-[10vh] text-[30px] text-pink-500  ">i'm a student KMITL</p>
+                </div>
+
+            </div>
+
+            <!-- รูปภาพ -->
+             <div class="flex justify-center items-center lg:w-60 lg:mx-20 xl:w-40 lg:mx-10">
+
+            <div class="bg-blue-200 rounded-lg  lg:w-120  flex  flex-col items-center p-3  justify-center xl:mr-[40vh] ">
+
+                <div class="p-4 rounded-md flex justify-center lg:w-100 lg:h-100 xl:w-100 h-100 ">
+                    <img class="w-full h-full "
+                        src="../assets/profile.png"
+                        alt="profile-picture" />
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/vanit.rx/"target="_blank"id='con'>
+                        <button type="button" data-twe-ripple-init data-twe-ripple-color="light"
+                            class="mb-2 inline-block rounded-full bg-[#c13584] p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg cursor-pointer">
+                            <span class="[&>svg]:h-4 [&>svg]:w-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
+
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg>
+                            </span>
+                        </button>
+                    </a>
+                    <a href="https://www.facebook.com/bowkk.vanichaya"target="_blank">
+                        <button type="button" data-twe-ripple-init data-twe-ripple-color="light"
+                            class="mb-2 inline-block rounded-full bg-[#1877F2] p-3 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg cursor-pointer">
+                            <span class="[&>svg]:h-4 [&>svg]:w-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 320 512">
+
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91V132.41c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S261.6 0 225.36 0c-73.06 0-121.03 44.38-121.03 124.72v70.62H32v92.66h72.33V480h100.17V288z" />
+                                </svg>
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="mt-[20vh] lg:mt-20">
+            <div class="flex  justify-center">
+                <div
+                    class="border-2 bg-blue-200 rounded-2xl flex items-center justify-center px-10 py-2 font-bold text-2xl ">
+                    About Me</div>
+            </div>
+            <div
+                class="lg:mx-48  p-4 lg:p-0 lg:h-50 h-50 lg:mt-10  mt-[5vh] bg-pink-200 border-3 rounded-2xl flex lg:flex-row flex-col">
+                <div class="lg:p-6 p-3 lg:text-md text-sm font-mono">
+                    <h1>สวัสดีค่ะ เราชื่อ วณิชญา หรือเรียก วณิช ก็ได้
+                        เราเป็นนักศึกษาปีที่ 2 ที่ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง (KMITL)
+                        กำลังศึกษาอยู่ใน คณะวิศวกรรมศาสตร์ ภาควิชาวิศวกรรมคอมพิวเตอร์ สาขาไอโอทีและสารสนเทศ
+
+                        เรามีความชอบในเทคโนโลยี โดยเฉพาะด้าน Internet of Things (IoT)
+                        เพราะชอบทำโปรเจกต์ที่เชื่อมโยงทั้งฮาร์ดแวร์และซอฟต์แวร์เข้าด้วยกัน
+                        ยินดีที่ได้รู้จักและหวังว่าจะได้ร่วมงานกันค่ะ!
+
+                    </h1>
+                </div>
+            </div>
+            <div
+                class="lg:mx-48 p-4 lg:p-0 lg:h-70  lg:mt-10  mt-[5vh] border-3 rounded-2xl flex lg:flex-row flex-col bg-amber-100">
+                <div class="mb-7 w-full p-10 flex-row ">
+                    <div class="flex justify-between py-1">
+                        <span class="text-base text-gray-lite font-semibold ">Mobile App </span>
+                        <span class="text-base font-semibold  pr-5 ">50%</span>
+                    </div>
+                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                        <path class="rc-progress-line-trail" d="M 0.5,0.5
+                 L 99.5,0.5" stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0"></path>
+                        <path class="rc-progress-line-path" d="M 0.5,0.5
+                 L 99.5,0.5" stroke-linecap="round" stroke="#9272D4" stroke-width="1" fill-opacity="0"
+                            style="stroke-dasharray: 50.05px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                        </path>
+                    </svg>
+                    <div class="flex justify-between py-1 mt-5">
+                        <span class="text-base font-semibold ">UX / UI</span>
+                        <span class="text-base font-semibold  pr-5 ">65%</span>
+                    </div>
+                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                        <path class="rc-progress-line-trail" d="M 0.5,0.5
+                 L 99.5,0.5" stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0"></path>
+                        <path class="rc-progress-line-path" d="M 0.5,0.5
+                 L 99.5,0.5" stroke-linecap="round" stroke="#5185D4" stroke-width="1" fill-opacity="0"
+                            style="stroke-dasharray: 64.35px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                        </path>
+                    </svg>
+                    <div class="flex justify-between py-1 mt-5">
+                        <span class="text-base  font-semibold dark:text-[#A6A6A6]">Photoshope</span>
+                        <span class="text-base font-semibold  pr-5 dark:text-[#A6A6A6]">75%</span>
+                    </div>
+                    <svg class="rc-progress-line" viewBox="0 0 100 1" preserveAspectRatio="none">
+                        <path class="rc-progress-line-trail" d="M 0.5,0.5
+                 L 99.5,0.5" stroke-linecap="round" stroke="#D9D9D9" stroke-width="1" fill-opacity="0"></path>
+                        <path class="rc-progress-line-path" d="M 0.5,0.5
+                 L 99.5,0.5" stroke-linecap="round" stroke="#CA56F2" stroke-width="1" fill-opacity="0"
+                            style="stroke-dasharray: 74.25px, 100px; stroke-dashoffset: 0px; transition: stroke-dashoffset 0.3s ease 0s, stroke-dasharray 0.3s ease 0s, stroke 0.3s linear 0s, 0.06s;">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+
+
+        
+        <div class="lg:mx-48 p-4 lg:p-0 lg:mt-10 mt-[5vh]  rounded-2xl flex flex-col "id='ex'>
+            <div class="flex justify-center">
+                <button id="dropdownButton"
+                    class="w-60 h-15 bg-orange-300 text-black text-2xl font-bold py-2 px-4 rounded-2xl border-2 cursor-pointer">
+                    Certificate
+                </button>
+            </div>
+
+          
+            <div id="dropdownContent" class="hidden mt-4 flex justify-center gap-4 w-auto">
+                <div class="flex lg:flex-row flex-col justify-center h-100 mt-80 lg:mt-0">
+                    <img src="../assets/certificate.1.jpg" alt="Image 1"
+                        class="lg:w-[70vh] lg:h-[50vh] p-3  bg-blue-300 ">
+                    <img src="../assets/certificate.1.jpg" alt="Image 2"
+                        class="lg:w-[70vh] lg:h-[50vh] p-3  bg-blue-300">
+                    <img src="../assets/certificate.1.jpg" alt="Image 3"
+                        class="lg:w-[70vh] lg:h-[50vh]  p-3  bg-blue-300">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("dropdownButton").addEventListener("click", function () {
+                const dropdown = document.getElementById("dropdownContent");
+                dropdown.classList.toggle("hidden");
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>
+
+
+<script>
+    document.getElementById("btndrop").addEventListener("click", function () {
+        const dropdown = document.getElementById("dropcon");
+        dropdown.classList.toggle("hidden");
+    });
+    document.getElementById("X").addEventListener("click", function () {
+        const dropdown = document.getElementById("dropcon");
+        dropdown.classList.toggle("hidden");
+    });
+    const Touser = document.getElementById('Touser');
+    const user = document.getElementById('user');
+    const Toex = document.getElementById('Toex');
+    const ex = document.getElementById('ex');
+    const Tocon = document.getElementById('Tocon');
+    const con = document.getElementById('con');
+    const Touser1 = document.getElementById('Touser1');
+    const Toex1 = document.getElementById('Toex1');
+    const Tocon1 = document.getElementById('Tocon1');
+    
+  
+    Touser.addEventListener('click', () => {
+      user.scrollIntoView({ behavior: 'smooth' });
+      
+    });
+    Toex.addEventListener('click', () => {
+      ex.scrollIntoView({ behavior: 'smooth' });
+      
+    });
+    Tocon.addEventListener('click', () => {
+      con.scrollIntoView({ behavior: 'smooth' });
+      
+    });
+    Touser1.addEventListener('click', () => {
+      user.scrollIntoView({ behavior: 'smooth' });
+      const dropdown = document.getElementById("dropcon");
+      dropdown.classList.toggle("hidden");
+    });
+    Toex1.addEventListener('click', () => {
+      ex.scrollIntoView({ behavior: 'smooth' });
+      const dropdown = document.getElementById("dropcon");
+      dropdown.classList.toggle("hidden");
+    });
+    Tocon1.addEventListener('click', () => {
+      con.scrollIntoView({ behavior: 'smooth' });
+      const dropdown = document.getElementById("dropcon");
+      dropdown.classList.toggle("hidden");
+    });
+  </script>
